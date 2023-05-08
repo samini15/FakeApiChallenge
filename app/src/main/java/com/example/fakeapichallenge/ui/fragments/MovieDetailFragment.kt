@@ -1,4 +1,4 @@
-package com.example.fakeapichallenge
+package com.example.fakeapichallenge.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
+import com.example.fakeapichallenge.R
 import com.example.fakeapichallenge.databinding.FragmentMovieDetailBinding
 
 class MovieDetailFragment : Fragment() {

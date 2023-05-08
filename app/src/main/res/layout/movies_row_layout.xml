@@ -10,6 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
+        android:background="@color/leveledBackgroundColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,8 +21,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/movie_row_imageView"
@@ -45,6 +45,7 @@
                 android:padding="8dp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/textColorPrimary"
                 app:layout_constraintTop_toBottomOf="@id/movie_row_imageView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/movie_row_imageView"

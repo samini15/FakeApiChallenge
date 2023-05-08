@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fragmentBackgroundColor">@color/dark</color>
+    <color name="leveledBackgroundColor">@color/darker</color>
+    <color name="textColorPrimary">@color/mediumGray</color>
+</resources>

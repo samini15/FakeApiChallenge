@@ -8,7 +8,6 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import com.example.fakeapichallenge.MovieDetailFragment
 import com.example.fakeapichallenge.R
 import com.example.fakeapichallenge.model.MovieItem
 import org.junit.Test

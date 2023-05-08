@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.example.fakeapichallenge.MovieDetailFragment"
+        android:name="com.example.fakeapichallenge.ui.fragments.MovieDetailFragment"
         android:label="fragment_movie_detail"
         tools:layout="@layout/fragment_movie_detail" >
         <action

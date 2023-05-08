@@ -44,6 +44,7 @@ class MoviesFragment : Fragment() {
         return binding?.root
     }
 
+    // region ViewModel Data observation
     private fun observeLocalData() {
         lifecycleScope.launch {
             movieViewModel.localMovies.observeOnce(viewLifecycleOwner) { entity ->
@@ -77,6 +78,7 @@ class MoviesFragment : Fragment() {
             }
         }
     }
+    // endregion ViewModel Data observation
 
     /*private fun loadMoviesFromCache() {
         lifecycleScope.launch {

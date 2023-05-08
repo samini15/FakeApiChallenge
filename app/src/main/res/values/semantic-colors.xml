@@ -2,4 +2,5 @@
 <resources>
     <color name="fragmentBackgroundColor">@color/lightMediumGray</color>
     <color name="leveledBackgroundColor">@color/white</color>
+    <color name="textColorPrimary">@color/darker</color>
 </resources>
