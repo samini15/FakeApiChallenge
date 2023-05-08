@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp">
+    android:layout_margin="@dimen/margin_tiny">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="@dimen/card_corner_radius"
         android:background="@color/leveledBackgroundColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:elevation="5dp"
+        android:elevation="@dimen/card_elevation"
         app:strokeColor="@color/leveledBackgroundColor"
         app:strokeWidth="1dp">
 
@@ -36,16 +36,11 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
+                style="@style/HeaderTextStyle"
                 android:id="@+id/movie_row_title_textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="8dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/textColorPrimary"
                 app:layout_constraintTop_toBottomOf="@id/movie_row_imageView"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/movie_row_imageView"

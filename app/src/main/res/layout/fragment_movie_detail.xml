@@ -9,8 +9,8 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="10dp"
+        android:layout_margin="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/card_corner_radius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -33,13 +33,8 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
+                style="@style/HeaderTextStyle"
                 android:id="@+id/movie_detail_title_textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/textColorPrimary"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/movie_detail_imageView"
@@ -47,12 +42,8 @@
                 tools:text="Movie title" />
 
             <TextView
+                style="@style/NormalTextStyle"
                 android:id="@+id/movie_detail_year_textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:textColor="@color/textColorPrimary"
                 app:layout_constraintEnd_toEndOf="@+id/movie_detail_title_textView"
                 app:layout_constraintStart_toStartOf="@+id/movie_detail_title_textView"
                 app:layout_constraintTop_toBottomOf="@+id/movie_detail_title_textView"
@@ -60,12 +51,8 @@
                 tools:text="Year" />
 
             <TextView
+                style="@style/NormalTextStyle"
                 android:id="@+id/movie_detail_director_textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:textColor="@color/textColorPrimary"
                 app:layout_constraintEnd_toEndOf="@+id/movie_detail_year_textView"
                 app:layout_constraintStart_toEndOf="@+id/movie_detail_imageView"
                 app:layout_constraintTop_toBottomOf="@+id/movie_detail_year_textView"

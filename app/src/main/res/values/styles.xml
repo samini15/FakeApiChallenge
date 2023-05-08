@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CommonTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="NormalTextStyle" parent="CommonTextStyle">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="CommonTextStyle">
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -49,7 +49,7 @@ class MoviesFragment : Fragment() {
         lifecycleScope.launch {
             movieViewModel.localMovies.observeOnce(viewLifecycleOwner) { entity ->
                 if (entity.isNotEmpty()) {
-                    Log.i(FRAGMENT_TAG, "Fetch local database called")
+                    Log.i(FRAGMENT_TAG, "Fetch local data")
                     adapter.updateData(entity)
                 } else {
                     observeRemoteData()
@@ -59,7 +59,7 @@ class MoviesFragment : Fragment() {
     }
 
     private fun observeRemoteData() {
-        Log.d(FRAGMENT_TAG, "Fetch API data called")
+        Log.i(FRAGMENT_TAG, "Fetch API data called")
         movieViewModel.fetchMovies()
 
         // Observe data changes and update UI accordingly
@@ -71,7 +71,6 @@ class MoviesFragment : Fragment() {
                     }
                 }
                 is NetworkResult.Error -> {
-                    //loadMoviesFromCache()
                     Toast.makeText(this.context, response.message, Toast.LENGTH_SHORT).show()
                 }
                 is NetworkResult.Progress -> {}
@@ -79,16 +78,6 @@ class MoviesFragment : Fragment() {
         }
     }
     // endregion ViewModel Data observation
-
-    /*private fun loadMoviesFromCache() {
-        lifecycleScope.launch {
-            movieViewModel.localMovies.observe(viewLifecycleOwner) { data ->
-                if (data.isNotEmpty()) {
-                    //adapter.updateData(data)
-                }
-            }
-        }
-    }*/
 
     private fun initViewModels() {
         movieViewModel = ViewModelProvider(this)[MovieViewModel::class.java]
