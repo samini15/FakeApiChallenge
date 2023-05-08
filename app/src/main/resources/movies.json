@@ -1,0 +1,62 @@
+[
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "director": "The Wachowskis",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "year": 1989,
+    "director": "Steven Spielberg",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "director": "Ridley Scott",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+  },
+  {
+    "title": "The Godfather: Part II",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg"
+  },
+  {
+    "title": "Star Wars",
+    "year": 1977,
+    "director": "George Lucas",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "director": "Hayao Miyazaki",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "director": "Robert Zemeckis",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg"
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "director": "Michel Gondry",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gzyZoAN3QxhaeHvHzq1a67zHCAP.jpg"
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "director": "Stanley Kubrick",
+    "posterUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dyRZE1GxbMI03HY8CweDXWHbVZg.jpg"
+  }
+]
