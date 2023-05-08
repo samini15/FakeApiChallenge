@@ -6,4 +6,6 @@ object Constants {
 
     const val MOVIE_DB = "movie_database"
     const val MOVIE_TABLE = "movie_table"
+
+    const val GRID_SPAN_COUNT = 2
 }

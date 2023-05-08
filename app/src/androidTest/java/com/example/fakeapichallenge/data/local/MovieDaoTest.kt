@@ -85,6 +85,7 @@ class MovieDaoTest {
 
         Truth.assertThat(allItems).hasSize(1)
         Truth.assertThat(allItems).contains(item2WithUpdatedUrl)
+        Truth.assertThat(allItems).doesNotContain(item1)
     }
 
 
