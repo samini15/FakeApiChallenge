@@ -3,17 +3,19 @@ package com.example.fakeapichallenge.ui.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.fakeapichallenge.R
 import com.example.fakeapichallenge.databinding.MoviesRowLayoutBinding
 import com.example.fakeapichallenge.model.MovieItem
+import com.example.fakeapichallenge.ui.fragments.MoviesFragmentDirections
 import com.example.fakeapichallenge.utils.AdapterListDiffHelper
 
 class MoviesAdapter : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
 
-    var movies: List<MovieItem> = ArrayList()
+    private var movies: List<MovieItem> = ArrayList()
 
     fun updateData(data: List<MovieItem>) {
         val diffCallBack = AdapterListDiffHelper(movies, data)
@@ -56,6 +58,8 @@ class MoviesAdapter : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
         }
 
         override fun onClick(v: View?) {
+            val action = MoviesFragmentDirections.actionMoviesFragmentToMovieDetailFragment(movieItem)
+            binding.root.findNavController().navigate(action)
         }
     }
 }

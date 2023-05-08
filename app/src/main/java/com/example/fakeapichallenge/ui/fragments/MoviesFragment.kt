@@ -23,7 +23,7 @@ import kotlinx.coroutines.launch
 class MoviesFragment : Fragment() {
 
     private lateinit var movieViewModel: MovieViewModel
-    val adapter by lazy { MoviesAdapter() }
+    private val adapter by lazy { MoviesAdapter() }
 
     private var binding: FragmentMoviesBinding? = null
 

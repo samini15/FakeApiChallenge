@@ -1,11 +1,14 @@
 package com.example.fakeapichallenge.model
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.fakeapichallenge.Constants
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = Constants.MOVIE_TABLE)
 data class MovieItem(
 
@@ -27,4 +30,4 @@ data class MovieItem(
     @ColumnInfo(name = "year")
     @SerializedName("year")
     val year: Int
-)
+) : Parcelable
