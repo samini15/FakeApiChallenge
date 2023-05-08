@@ -5,7 +5,5 @@ import retrofit2.Response
 
 class RemoteMovieRepository constructor(private val movieApiService: MovieApiService)
     : RemoteRepository<Movies> {
-    override suspend fun fetchRemoteData(): Response<Movies> {
-        TODO("Not yet implemented")
-    }
+    override suspend fun fetchRemoteData(): Response<Movies> = movieApiService.fetchMovies()
 }
