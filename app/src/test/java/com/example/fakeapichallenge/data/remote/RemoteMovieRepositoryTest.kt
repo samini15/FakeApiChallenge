@@ -61,9 +61,9 @@ class RemoteMovieRepositoryTest {
     @Test
     fun `when several movies, api must return those movies with http code 200`() = runBlocking {
         val movies = listOf(
-            MovieItem("Stanley Kuberic", "url", "The Shining", 1988),
-            MovieItem("George Lucas", "url", "Star wars", 1977),
-            MovieItem("The Watchowskis", "url", "The Matrix", 1999)
+            MovieItem(id = 1,"Stanley Kuberic", "url", "The Shining", 1988),
+            MovieItem(id = 2,"George Lucas", "url", "Star wars", 1977),
+            MovieItem(id = 3, "The Watchowskis", "url", "The Matrix", 1999)
         )
         mockWebServer.enqueueMockResponseWithBodyAndResponseCode(movies, HttpURLConnection.HTTP_OK)
 
