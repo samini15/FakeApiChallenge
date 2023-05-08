@@ -10,6 +10,7 @@ import com.example.fakeapichallenge.data.local.LocalRepository
 import com.example.fakeapichallenge.data.remote.RemoteRepository
 import com.example.fakeapichallenge.model.MovieItem
 import com.example.fakeapichallenge.model.Movies
+import com.example.fakeapichallenge.utils.ConnectivityUtils
 import com.example.fakeapichallenge.utils.NetworkResult
 import com.example.fakeapichallenge.utils.NetworkUtils
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -39,12 +40,16 @@ class MovieViewModel @Inject constructor(
     private suspend fun getMoviesSafeCall() {
         remoteMovies.value = NetworkResult.Progress()
 
-        val response = remoteRepository.fetchRemoteData()
-        remoteMovies.value = NetworkUtils.handleApiResponse(response)
+        if (ConnectivityUtils.hasInternetConnection(getApplication())) {
+            val response = remoteRepository.fetchRemoteData()
+            remoteMovies.value = NetworkUtils.handleApiResponse(response)
 
-        // Caching data fetched to local DB
-        remoteMovies.value?.data?.let { currentMovies ->
-            offlineCacheMovies(currentMovies)
+            // Caching data fetched to local DB
+            remoteMovies.value?.data?.let { currentMovies ->
+                offlineCacheMovies(currentMovies)
+            }
+        } else {
+            remoteMovies.value = NetworkResult.Error("No Internet Connection")
         }
 
     }
